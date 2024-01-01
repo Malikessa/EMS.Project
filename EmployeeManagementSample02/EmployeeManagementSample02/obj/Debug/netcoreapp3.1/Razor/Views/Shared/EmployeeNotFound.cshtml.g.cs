@@ -33,8 +33,15 @@ using EmployeeManagementSample02.ViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Projects\EMS.Project\EmployeeManagementSample02\EmployeeManagementSample02\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6acf466349ec28b1375246637437caf97eaa4529", @"/Views/Shared/EmployeeNotFound.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"35e2fc6b8df45cfaebf6937202ed37b2dd7ef354", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"09772547115329ae3cb4131e5d107f90466641e6", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_EmployeeNotFound : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<int>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "index", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -83,7 +90,7 @@ using EmployeeManagementSample02.ViewModels;
 #line hidden
 #nullable disable
             WriteLiteral(" not found\r\n    </h5>\r\n\r\n</div>\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6acf466349ec28b1375246637437caf97eaa45295485", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6acf466349ec28b1375246637437caf97eaa45295707", async() => {
                 WriteLiteral("\r\n    Click here to see the list of all emplyees...\r\n");
             }
             );
