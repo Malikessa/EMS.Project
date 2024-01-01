@@ -16,7 +16,6 @@ namespace EmployeeManagementSample02.ViewModels
         [DataType(DataType.Password)]
         public string Password { get; set; }
         
-        [Required]
         [DataType(DataType.Password)]
         [Compare("Password",
             ErrorMessage ="Password and Confirmation Password do not match.")]
