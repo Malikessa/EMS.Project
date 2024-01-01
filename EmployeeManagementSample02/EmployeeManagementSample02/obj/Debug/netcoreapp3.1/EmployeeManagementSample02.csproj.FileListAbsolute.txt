@@ -164,3 +164,8 @@ C:\Projects\EMS.Project\EmployeeManagementSample02\EmployeeManagementSample02\ob
 C:\Projects\EMS.Project\EmployeeManagementSample02\EmployeeManagementSample02\obj\Debug\netcoreapp3.1\EmployeeManagementSample02.dll
 C:\Projects\EMS.Project\EmployeeManagementSample02\EmployeeManagementSample02\obj\Debug\netcoreapp3.1\EmployeeManagementSample02.pdb
 C:\Projects\EMS.Project\EmployeeManagementSample02\EmployeeManagementSample02\obj\Debug\netcoreapp3.1\EmployeeManagementSample02.genruntimeconfig.cache
+C:\Projects\EMS.Project\EmployeeManagementSample02\EmployeeManagementSample02\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Projects\EMS.Project\EmployeeManagementSample02\EmployeeManagementSample02\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Projects\EMS.Project\EmployeeManagementSample02\EmployeeManagementSample02\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Projects\EMS.Project\EmployeeManagementSample02\EmployeeManagementSample02\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Projects\EMS.Project\EmployeeManagementSample02\EmployeeManagementSample02\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
