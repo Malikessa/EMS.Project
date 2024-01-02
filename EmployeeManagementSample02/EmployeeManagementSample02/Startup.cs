@@ -1,8 +1,10 @@
 using EmployeeManagementSample02.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -37,7 +39,13 @@ namespace EmployeeManagementSample02
             })
                 .AddEntityFrameworkStores<AppDbContext>();
 
-            services.AddMvc(option => option.EnableEndpointRouting=false);
+            services.AddMvc(option => {
+                var policy = new AuthorizationPolicyBuilder()
+                                    .RequireAuthenticatedUser()
+                                    .Build();
+                option.Filters.Add(new AuthorizeFilter(policy));
+                option.EnableEndpointRouting = false;
+            });
             services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
         }
 

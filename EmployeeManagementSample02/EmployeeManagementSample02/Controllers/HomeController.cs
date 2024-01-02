@@ -1,5 +1,6 @@
 ﻿using EmployeeManagementSample02.Models;
 using EmployeeManagementSample02.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -13,6 +14,7 @@ using System.Threading.Tasks;
 
 namespace EmployeeManagementSample02.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly IEmployeeRepository _employeeRepository;
@@ -24,11 +26,15 @@ namespace EmployeeManagementSample02.Controllers
             _employeeRepository = employeeRepository;
             this.hostingEnvironment = hostingEnvironment;
         }
+
+        [AllowAnonymous]
         public ViewResult Index()
         {
             var model = _employeeRepository.GetAllEmployees();
             return View(model);
         }
+
+        [AllowAnonymous]
         public ViewResult Details(int id)
         {
             Employee employee = _employeeRepository.GetEmployee(id);
