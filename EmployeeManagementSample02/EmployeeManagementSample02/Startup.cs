@@ -32,7 +32,7 @@ namespace EmployeeManagementSample02
             services.AddDbContextPool<AppDbContext>(
                 options => options.UseSqlServer(Configuration.GetConnectionString("EmployeeDBConnection")));
 
-            services.AddIdentity<IdentityUser, IdentityRole>(option => 
+            services.AddIdentity<ApplicationUser, IdentityRole>(option => 
             {
                 option.Password.RequiredLength = 12;
                 option.Password.RequiredUniqueChars = 3;
