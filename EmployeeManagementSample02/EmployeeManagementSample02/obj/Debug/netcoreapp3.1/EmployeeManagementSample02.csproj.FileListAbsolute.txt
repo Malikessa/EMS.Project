@@ -243,3 +243,4 @@ C:\Projects\EMS.Project\EmployeeManagementSample02\EmployeeManagementSample02\bi
 C:\Projects\EMS.Project\EmployeeManagementSample02\EmployeeManagementSample02\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Projects\EMS.Project\EmployeeManagementSample02\EmployeeManagementSample02\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Projects\EMS.Project\EmployeeManagementSample02\EmployeeManagementSample02\obj\Debug\netcoreapp3.1\Razor\Views\Adminstration\CreateRole.cshtml.g.cs
+C:\Projects\EMS.Project\EmployeeManagementSample02\EmployeeManagementSample02\obj\Debug\netcoreapp3.1\Razor\Views\Adminstration\ListRoles.cshtml.g.cs
