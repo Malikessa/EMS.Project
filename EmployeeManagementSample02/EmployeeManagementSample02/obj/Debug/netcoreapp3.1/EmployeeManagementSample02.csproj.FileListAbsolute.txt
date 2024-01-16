@@ -246,3 +246,4 @@ C:\Projects\EMS.Project\EmployeeManagementSample02\EmployeeManagementSample02\ob
 C:\Projects\EMS.Project\EmployeeManagementSample02\EmployeeManagementSample02\obj\Debug\netcoreapp3.1\Razor\Views\Adminstration\ListRoles.cshtml.g.cs
 C:\Projects\EMS.Project\EmployeeManagementSample02\EmployeeManagementSample02\obj\Debug\netcoreapp3.1\Razor\Views\Adminstration\EditRole.cshtml.g.cs
 C:\Projects\EMS.Project\EmployeeManagementSample02\EmployeeManagementSample02\obj\Debug\netcoreapp3.1\Razor\Views\Adminstration\EditUsersInRole.cshtml.g.cs
+C:\Projects\EMS.Project\EmployeeManagementSample02\EmployeeManagementSample02\obj\Debug\netcoreapp3.1\Razor\Views\Account\AccessDenied.cshtml.g.cs
