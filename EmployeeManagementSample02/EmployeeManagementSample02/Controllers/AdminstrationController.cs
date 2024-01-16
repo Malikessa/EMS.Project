@@ -1,5 +1,6 @@
 ﻿using EmployeeManagementSample02.Models;
 using EmployeeManagementSample02.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -9,6 +10,8 @@ using System.Threading.Tasks;
 
 namespace EmployeeManagementSample02.Controllers
 {
+    [Authorize(Roles ="Admin")]
+    [Authorize(Roles = "Manager")]
     public class AdminstrationController : Controller
     {
         private readonly RoleManager<IdentityRole> roleManager;
