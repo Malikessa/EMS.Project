@@ -1,5 +1,15 @@
 ﻿
-<h3>An error ocurred while processing you request
-    Maintenance team has been informed. It will be fixed soon
+@if (ViewBag.ErrorTitle == null)
+{
+    <h3>
+        An error ocurred while processing you request
+        Maintenance team has been informed. It will be fixed soon
     </h3>
-<h4>Please contact us at EMS.mantenance@gmail.com</h4>
+    <h4>Please contact us at EMS.mantenance@gmail.com</h4>
+}
+else
+{
+    <h1 class="text-danger">@ViewBag.ErrorTitle</h1>
+    <h6 class="text-danger">@ViewBag.ErrorMessage</h6>
+}           
+
