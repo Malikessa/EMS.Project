@@ -84,8 +84,8 @@
             }
         </div>
         <div class="card-footer">
-            <a asp-action="EditUserClaims" asp-controller="Adminstration"
-               asp-route-claimId="@Model.Id" class="btn btn-primary" style="width:auto">Manage Claims</a>
+            <a asp-action="ManageUserClaims" asp-controller="Adminstration"
+               asp-route-userId="@Model.Id" class="btn btn-primary" style="width:auto">Manage Claims</a>
         </div>
     </div>
 </form>
