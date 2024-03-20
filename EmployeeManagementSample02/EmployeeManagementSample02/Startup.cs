@@ -47,6 +47,11 @@ namespace EmployeeManagementSample02
                 option.EnableEndpointRouting = false;
             });
 
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.AccessDeniedPath = new PathString("/Adminstration/AccessDenied");
+            });
+
             services.AddAuthorization(options=> 
             {
                 options.AddPolicy("DeleteRolePolicy",

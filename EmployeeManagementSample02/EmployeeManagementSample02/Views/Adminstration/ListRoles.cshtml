@@ -1,7 +1,5 @@
 ﻿@model IEnumerable<IdentityRole>
 
-@using Microsoft.AspNetCore.Authorization
-
 @inject IAuthorizationService authorizationService
 
 @{
@@ -31,6 +29,11 @@
                     {
                         <a class="btn btn-primary"
                            asp-action="EditRole" asp-controller="Adminstration" asp-route-id="@role.Id">Edit</a>
+                    }
+
+                    @if ((await authorizationService.AuthorizeAsync(User, "DeleteRolePolicy")).Succeeded)
+                    {
+
                     }
                     <span id="confirmDeleteSpan_@role.Id" style="display:none">
                         <span>Are you sure you want to delete?</span>
