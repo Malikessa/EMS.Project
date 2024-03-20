@@ -58,7 +58,7 @@ namespace EmployeeManagementSample02
                     policy=>policy.RequireClaim("Delete Role"));
 
                 options.AddPolicy("EditRolePolicy",
-                    policy => policy.RequireClaim("Edit Role"));
+                    policy => policy.RequireClaim("Edit Role","true"));
             }
             );
 
